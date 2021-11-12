@@ -7,6 +7,8 @@ from django.contrib import messages
 # Create your views here.
 
 def index(request):
+
+    messages.success(request,"Test message")
     
     return render(request,'index.html')
     # return HttpResponse("This is home page")
